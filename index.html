@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>portfolio</title>
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="portfoilo.css">
 	
 	<style>
@@ -65,6 +65,10 @@ section{
    
     /* Scroll Snap */
     scroll-snap-align: center;
+}
+
+section image{
+	justify-content: left;
 }
 
 #welcome-section h1{
@@ -157,6 +161,10 @@ footer{
     border-top: 3px #c506a5 solid;
 }
 
+footer p{
+
+}
+
 	</style>
 </head>
 <body>
@@ -174,57 +182,26 @@ footer{
 		<section id="welcome-section">
 			<h1>Hey I am Namarek</h1>
 			<p>I'm a CS student from Sudan and a passionate web developer</p>
-			<!--<img src="Doodle muslimah arts.jpeg" alt="My Profile Picture" class="profile-picture">-->
+			<img src="data:image/jpeg;base64,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" alt="My Profile Picture" class="profile-picture">
 		</section>
 
 		<section id="projects">
 			<h2>These are some of my skills</h2>
 
 			<div class="container">
-				<!--<div class="project-title">
-					<a href="#">
-						<img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
-						 alt="">
-						<p>Tribute Page</p>
-					</a>
-				</div>
-	
-				<div class="project-title">
-					<a href="#">
-						<img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
-						 alt="">
-						<p>Random Quote Machine</p>
-					</a>
-				</div>
-					
-				<div class="project-title">
-					<a href="#">
-						<img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
-						 alt="">
-						<p>JavaScript Calculator</p>
-					</a>
-				</div>	-->
-				
 				
             <div class="project-title">      
                 <p>HTML5<br /></p>
-          
-			
 			     
                 <p>CSS3<br /></p>
-           
-			
 			     
                 <p>JavaScript<br /></p>
-           
-			
-			     
+   		     
                 <p>PHP<br /></p>
             </div>
 			
 			</div>			
 			
-			<!--<button>Show all</button>-->
 		</section>
 
 		<section id="contact">
@@ -232,17 +209,16 @@ footer{
 			<p>How do you take your coffee?</p>
 			<ul>
 				<li><a href="#">Facebook</a></li>
-				<li><a href="https//:github.com" id="profile-link">GitHub</a></li>
+				<li><a href="#" id="profile-link">GitHub</a></li>
 				<li><a href="#">Twitter</a></li>
 				<li><a href="#">Send a mail</a></li>
 				<li><a href="#">Call me</a></li>
 			</ul>
 		</section>
 
-		<!--<footer>
-			<p>**This is just a fake portfolio. All the projects and contact details given are not real. &nbsp; &nbsp; &nbsp;
-				 &copy; Created for freeCodeCamp </p>
-		</footer>-->
+		<footer>
+			<p>All rights reserved for Namarek Shiekhidris. &nbsp; &copy; </p>
+		</footer>
 	</div>
 </body>
 </html>
